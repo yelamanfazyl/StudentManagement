@@ -21,8 +21,10 @@ public class Main {
         ArrayList<Course> hansCourses = hansDeNeville.getCourses();
 
         for(int i = 0; i < hansCourses.size(); i++){
-            Homework hw = new Homework("Assignment 1", "25-09-2022");
-            hansCourses.get(i).setHomework(hw);
+            Homework hw1 = new Homework("Assignment 1", "25-09-2022");
+            Homework hw2 = new Homework("Assignment 2", "31-09-2022");
+            hansCourses.get(i).setHomework(hw1);
+            hansCourses.get(i).setHomework(hw2);
         }
 
         Student Yelaman = new Student("Yelaman", "Fazyl");
